@@ -40,7 +40,7 @@ fs = None
 # Captura de audio
 if metodo_entrada == "Grabar con el micrófono":
   st.subheader(
-      f"1. Grabación: **'{fonema}'** (Ventana objetivo: 2s)"
+      f"1. Grabación: **'{fonema}'** (2s)"
   )
   audio_bytes = st.audio_input(
       "Haz clic en el micrófono y pronuncia el fonema:"
