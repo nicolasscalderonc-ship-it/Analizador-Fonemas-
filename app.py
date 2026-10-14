@@ -14,8 +14,7 @@ st.set_page_config(
 # Títulos principales
 st.title("🎙️ Analizador de Señales de Voz Vocales y Consonantes y FFT")
 st.markdown(
-    "Interfaz desarrollada para el análisis en el **Dominio del Tiempo** y la"
-    " **Transformada de Fourier (FFT)** de vocales y consonantes."
+
 )
 st.markdown("---")
 
