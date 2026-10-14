@@ -7,12 +7,12 @@ import streamlit as st
 # Configuración de la página
 st.set_page_config(
     page_title="Analizador de Fonemas - MATLAB a Python",
-    page_icon="🎙️",
+    page_icon="",
     layout="wide",
 )
 
 # Títulos principales
-st.title("🎙️ Analizador de Señales de Voz y FFT")
+st.title(" Analizador de Señales de Voz y FFT")
 st.markdown(
     "Interfaz desarrollada para el análisis en el **Dominio del Tiempo** y la"
     " **Transformada de Fourier (FFT)** de vocales y consonantes."
@@ -20,7 +20,7 @@ st.markdown(
 st.markdown("---")
 
 # Panel de control lateral
-st.sidebar.header("🎛️ Panel de Control")
+st.sidebar.header(" Panel de Control")
 fonema = st.sidebar.selectbox(
     "Selecciona el fonema a analizar:", ("A", "E", "I", "O", "U", "F", "S")
 )
@@ -30,7 +30,7 @@ metodo_entrada = st.sidebar.radio(
 
 st.sidebar.markdown("---")
 st.sidebar.info(
-    "💡 **Nota:** Se procesará y centrará automáticamente una ventana de"
+    " **Nota:** Se procesará y centrará automáticamente una ventana de"
     " **2 segundos** de audio."
     
 )
