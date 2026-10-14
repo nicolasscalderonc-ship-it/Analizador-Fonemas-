@@ -6,13 +6,13 @@ import streamlit as st
 
 # Configuración de la página
 st.set_page_config(
-    page_title="Analizador de Fonemas - MATLAB a Python",
-    page_icon="🎙️",
+    page_title="Analizador de Señales - MATLAB a Python",
+    page_icon="",
     layout="wide",
 )
 
 # Títulos principales
-st.title("🎙️ Analizador de Señales de Voz y FFT")
+st.title("🎙️ Analizador de Señales de Voz Vocales y Consonantes y FFT")
 st.markdown(
     "Interfaz desarrollada para el análisis en el **Dominio del Tiempo** y la"
     " **Transformada de Fourier (FFT)** de vocales y consonantes."
@@ -30,7 +30,7 @@ metodo_entrada = st.sidebar.radio(
 
 st.sidebar.markdown("---")
 st.sidebar.info(
-    "💡 **Nota:** Se procesará y centrará automáticamente una ventana de"
+    " **Nota:** Se procesará y centrará automáticamente una ventana de"
     " **2 segundos** de audio."
 )
 
@@ -40,7 +40,7 @@ fs = None
 # Captura de audio
 if metodo_entrada == "Grabar con el micrófono":
   st.subheader(
-      f"1. Grabación del Fonema: **'{fonema}'** (Ventana objetivo: 2s)"
+      f"1. Grabación: **'{fonema}'** (Ventana objetivo: 2s)"
   )
   audio_bytes = st.audio_input(
       "Haz clic en el micrófono y pronuncia el fonema:"
@@ -123,7 +123,7 @@ if senal is not None:
 
 # --- MENÚ DESPLEGABLE INFERIOR DE CRÉDITOS ---
 st.markdown("---")
-with st.expander("ℹ️ Ver Integrantes del Proyecto"):
+with st.expander("Ver Integrantes del Proyecto"):
   st.markdown(
       "- **Danna Valentina Aguilar Caro** — Código: `133318`\n"
       "- **Nicolas Steven Calderon Cano** — Código: `126153`"
