@@ -14,7 +14,7 @@ st.set_page_config(
 # Títulos principales
 st.title("🎙️ Analizador de Señales de Voz Vocales y Consonantes y FFT")
 st.markdown(
-
+""    
 )
 st.markdown("---")
 
